@@ -15,25 +15,45 @@ body {
     flex-direction: column;
 }
 
+/* --- NAV SECTION ---- */
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    margin: 20px 0 50px;
+}
+
+.menu__link {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.menu__link.active {
+    text-decoration: underline;
+}
+
 /* --- SEARCH SECTION ---- */
 
 .search {
     display: flex;
-    width: 95%;
+    width: 100%;
     margin: 20px auto;
 }
 
 .search__bar {
     width: 100%;
+    margin: 0 auto;
     border:none;
     border-radius: 20px;
-    padding: 0 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color:#c14040;
 }
 
 .search__bar::placeholder {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color:#c14040;
-    font-weight: bold;
 }
 
 .search__filters {

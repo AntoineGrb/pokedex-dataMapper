@@ -9,10 +9,12 @@
 </head>
 <body>
     <div id="container">
+        <nav class="menu">
+            <a class='menu__link <%= page === 'home' && 'active' %>' href="/"> Liste des pokemons </a>
+            <a class='menu__link <%= page === 'type' && 'active' %>' href="/types"> Liste des types </a>
+        </nav>
         <div class="search">
-            <input class="search__bar" type="text" name="" id="" placeholder="Pokedex">
+            <input class="search__bar" type="text" name="" id="" placeholder="Rechercher un pokemon">
             <div class="search__filters">
-                <p> Liste </p>
-                <p> Types </p>
             </div>
         </div>
