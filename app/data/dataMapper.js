@@ -6,7 +6,11 @@ const dataMapper = {
     getAllPokemons : async () => {
         const query = `SELECT * FROM pokemon;`;
         const result = await client.query(query);
-        return result.rows;
+        if (result.rows === null) {
+			return null;
+		} else {
+            return result.rows;
+		}
     },
 
     getPokemon : async (pokemonId) => {
@@ -16,7 +20,11 @@ const dataMapper = {
         `;
         const values = [pokemonId];
         const result = await client.query(query , values);
-        return result.rows[0];
+        if (result.rows === null) {
+			return null;
+		} else {
+            return result.rows[0];
+		}
     },
 
     getPokemonType : async(pokemonId) => {
@@ -28,14 +36,22 @@ const dataMapper = {
         `
         const values = [pokemonId];
         const result = await client.query(query , values);
-        return result.rows;
+        if (result.rows === null) {
+			return null;
+		} else {
+            return result.rows;
+		}
     },
 
     //Récupération des types
     getTypes: async() => {
         const query = `SELECT * FROM type;`;
         const result = await client.query(query);
-        return result.rows;
+        if (result.rows === null) {
+			return null;
+		} else {
+            return result.rows;
+		}
     },
 
     getPokemonsByType: async(type) => {
@@ -47,7 +63,11 @@ const dataMapper = {
         `;
         const values = [type];
         const result = await client.query(query , values);
-        return result.rows;
+        if (result.rows === null) {
+			return null;
+		} else {
+            return result.rows;
+		}
     },  
 
     //Recherche d'un pokemon par le nom
@@ -58,7 +78,11 @@ const dataMapper = {
         `;
         const values = [`%${text}%`];
         const result = await client.query(query , values);
-        return result.rows;
+        if (result.rows === null) {
+			return null;
+		} else {
+            return result.rows;
+		}
     },
 }
 
