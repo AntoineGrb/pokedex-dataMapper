@@ -19,7 +19,7 @@
                                 <p> PV </p>
                                 <p> <%= pokemon.pv %> </p>
                                 <div class="range">
-                                    <div class="range-full" style="width:<%= pokemon.attaque * 100 / 255 %>%"></div>
+                                    <div class="range-full" style="width:<%= pokemon.attaque * 100 / 200 %>%"></div>
                                     <div class="range-empty"></div>
                                 </div>
                             </div>
@@ -27,7 +27,7 @@
                                 <p> Attaque </p>
                                 <p> <%= pokemon.attaque %> </p>
                                 <div class="range">
-                                    <div class="range-full" style="width:<%= pokemon.attaque * 100 / 255 %>%"></div>
+                                    <div class="range-full" style="width:<%= pokemon.attaque * 100 / 200 %>%"></div>
                                     <div class="range-empty"></div>
                                 </div>
                             </div>
@@ -35,7 +35,7 @@
                                 <p> Défense </p>
                                 <p> <%= pokemon.defense %> </p>
                                 <div class="range">
-                                    <div class="range-full" style="width:<%= pokemon.defense * 100 / 255 %>%"></div>
+                                    <div class="range-full" style="width:<%= pokemon.defense * 100 / 200 %>%"></div>
                                     <div class="range-empty"></div>
                                 </div>
                             </div>
@@ -43,7 +43,7 @@
                                 <p> Ataque spé </p>
                                 <p> <%= pokemon.attaque_spe %> </p>
                                 <div class="range">
-                                    <div class="range-full" style="width:<%= pokemon.attaque_spe * 100 / 255 %>%"></div>
+                                    <div class="range-full" style="width:<%= pokemon.attaque_spe * 100 / 200 %>%"></div>
                                     <div class="range-empty"></div>
                                 </div>
                             </div>
@@ -51,7 +51,7 @@
                                 <p> Défense spé </p>
                                 <p> <%= pokemon.defense_spe %> </p>
                                 <div class="range">
-                                    <div class="range-full" style="width:<%= pokemon.defense_spe * 100 / 255 %>%"></div>
+                                    <div class="range-full" style="width:<%= pokemon.defense_spe * 100 / 200 %>%"></div>
                                     <div class="range-empty"></div>
                                 </div>
                             </div>
@@ -59,16 +59,14 @@
                                 <p> Vitesse </p>
                                 <p> <%= pokemon.vitesse %> </p>
                                 <div class="range">
-                                    <div class="range-full" style="width:<%= pokemon.vitesse * 100 / 255 %>%"></div>
+                                    <div class="range-full" style="width:<%= pokemon.vitesse * 100 / 200 %>%"></div>
                                     <div class="range-empty"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="footer">
-                    <a class="link-to-index" href="/"> Revenir à la liste </a>
-                </div>
+                <%- include('./partials/backlink') %>
             </div>
         </main>
     </div>

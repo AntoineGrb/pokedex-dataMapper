@@ -1,7 +1,12 @@
 <%- include('./partials/header.ejs') %>
         <main>
             <div class="types">
-                <p> Les types </p>
+                <p class="types__title"> Cliquer sur un type pour voir les pokemons associés </p>
+                <div class="types__list">
+                    <% for (let type of types) { %>
+                        <a class="type__item" href="/types/<%= type.name %>" style="background-color: #<%= type.color %> ;"> <%= type.name %> </a>
+                    <% } %>
+                </div>
             </div>
         </main>
     </div>

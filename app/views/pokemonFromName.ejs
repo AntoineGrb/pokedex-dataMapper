@@ -1,0 +1,25 @@
+<%- include('./partials/header.ejs') %>
+        <main>
+            <div class="list">
+
+                <% for (let pokemon of pokemonsFromName) { %>
+                    
+                    <div class="card">
+                        <div class="card__img">
+                            <a href="/pokemon/<%= pokemon.numero %>">
+                                <img src="/img/<%= pokemon.numero %>.png" alt="pokemon #<%= pokemon.numero %>">
+                            </a>
+                        </div>
+                        <p class="card__title"> 
+                            #<span class="card__title-id"> <%= pokemon.numero %> </span> 
+                            <span class="card__title-name"> <%= pokemon.nom %> </span> 
+                        </p>
+                    </div> 
+                    
+                <% } %>
+            </div>
+            <%- include('./partials/backlink') %>
+        </main>
+    </div>
+</body>
+</html>
