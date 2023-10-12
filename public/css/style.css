@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #c14040;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#container {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- SEARCH SECTION ---- */
+
+.search {
+    display: flex;
+    width: 95%;
+    margin: 20px auto;
+}
+
+.search__bar {
+    width: 100%;
+    border:none;
+    border-radius: 20px;
+    padding: 0 10px;
+}
+
+.search__bar::placeholder {
+    font-size: 1.2rem;
+    color:#c14040;
+    font-weight: bold;
+}
+
+.search__filters {
+    display: flex;
+}
+
+/* --- HOME PAGE ---- */
+
+.list {
+    width: 95%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.card {
+    width: 30%;
+    background-color: #982c2c;
+    border-radius: 20px;
+}
+
+.card__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.card__img img {
+    width: 90%;
+    max-width: 100%;
+}
+
+.card__title {
+    color:white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* --- POKEMON PAGE ---- */
+.details {
+    width: 95%;
+    margin: 0 auto;
+    color:white;
+}
+
+h1 {
+    text-align: center;
+}
+
+.pokemon {
+    display: flex;
+    gap: 20px;
+}
+
+.pokemon__photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex:1;
+}
+
+.pokemon__photo > img {
+    width: 90%;
+    max-width: 100%;
+}
+
+.pokemon__details {
+    flex:2;
+    background-color: #982c2c;
+    border-radius: 20px;
+    padding: 20px 10px;
+}
+
+.pokemon__details-type {
+    display: flex;
+    gap:10px;
+}
+
+.type-label {
+    width: 75px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.stat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stat > * {
+    width: 20%;
+}
+
+.range {
+    width: 60%;
+    height: 30px;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 20px;
+    border: none;
+}
+
+.range-full {
+    height: 100%;
+    background-color: white;
+    border-radius: 20px 1px 1px 20px;
+}
+
+.custom-range {
+    width: 60%;
+}
+
+.footer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.link-to-index {
+    text-decoration: none;
+    color:white;
+}
+
+
